@@ -1,0 +1,9 @@
+aiohttp
+aiofiles
+asyncpg
+Pillow
+pytest
+beautifulsoup4
+lxml
+Flask
+psycopg2-binary
