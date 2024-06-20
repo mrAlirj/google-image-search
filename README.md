@@ -41,41 +41,41 @@ MAX_IMAGES=5
 
 Ensure you have Docker and Docker Compose installed. Then, follow these steps:
 
-    Build and Run Docker Containers
+Build and Run Docker Containers
 
 
-    ```bash
-    docker-compose up --build
-    ```
+```bash
+docker-compose up --build
+```
 
-    This command will build the Docker images and start the containers. The Flask web application will be available at http://localhost:5000.
+This command will build the Docker images and start the containers. The Flask web application will be available at http://localhost:5000.
 
 # Accessing the Application
 
-    List Images:
-    To view the list of image URLs stored in the database, visit:
+List Images:
+To view the list of image URLs stored in the database, visit:
 
-    ```bash 
-    http://localhost:5000/images
-    ```
+```bash 
+http://localhost:5000/images
+```
 
-    View Specific Image:
-    To view a specific image by its ID, visit:
+View Specific Image:
+To view a specific image by its ID, visit:
 
 
-    ```bash 
-    http://localhost:5000/images/<id>
-    ```
+```bash 
+http://localhost:5000/images/<id>
+```
 
 ## File Structure
 
-    Dockerfile: Defines the Docker image for the application.
-    docker-compose.yml: Docker Compose configuration file.
-    requirements.txt: Lists the Python dependencies.
-    main.py: Entry point for running the image downloader script.
-    image_downloader.py: Contains functions for downloading, resizing images, and extracting image URLs.
-    app.py: Flask application for serving images from the database.
-    test_script.py: Unit tests for the image downloader and resizer script.
+Dockerfile: Defines the Docker image for the application.
+docker-compose.yml: Docker Compose configuration file.
+requirements.txt: Lists the Python dependencies.
+main.py: Entry point for running the image downloader script.
+image_downloader.py: Contains functions for downloading, resizing images, and extracting image URLs.
+app.py: Flask application for serving images from the database.
+test_script.py: Unit tests for the image downloader and resizer script.
 
 ## Main Scripts
 `main.py`
@@ -171,12 +171,3 @@ docker-compose run app pytest test_script.py
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
-```css
-This `README.md` file provides comprehensive documentation for your GitHub repository. It includes setup instructions, descriptions of the project's features, explanations of main scripts, information about testing, guidelines for contributing, and licensing details. Adjust the content as needed to fit your specific project requirements and preferences.
-```
-
-
-
-
-
-
